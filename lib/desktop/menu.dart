@@ -5,8 +5,6 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:travis/utils/pallets.dart';
 import 'package:travis/utils/recent.dart';
 
-import 'home.dart';
-
 class Menu extends StatefulWidget {
   @override
   _MenuRespState createState() => _MenuRespState();

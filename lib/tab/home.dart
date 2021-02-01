@@ -30,7 +30,7 @@ class _HomeTabletState extends State<HomeTablet> {
             Stack(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(62.0),
+                  padding: const EdgeInsets.all(65.0),
                   child: Center(
                     child: IconButton(
                       icon: (isColored ? moon : sun),
