@@ -31,7 +31,7 @@ class _MenuRespState extends State<Menu> {
           Padding(
             padding: const EdgeInsets.symmetric(
               horizontal: 50,
-              vertical: 30,
+              vertical: 70,
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -177,7 +177,18 @@ class _MenuRespState extends State<Menu> {
                         ),
                       ),
                       Center(
-                        child: Text('Thrinitee@gmail.com', style: largeText),
+                        child: Text(
+                          'Thrinitee@gmail.com',
+                          style: GoogleFonts.varelaRound(
+                            textStyle: TextStyle(
+                              fontSize: MediaQuery.of(context).size.width / 12,
+                              fontWeight: FontWeight.w700,
+                              color: (isColored
+                                  ? Color(0xFF303030)
+                                  : Color(0xFFf6f6f6)),
+                            ),
+                          ),
+                        ),
                       ),
                       SizedBox(height: 7),
                       MyIcon()

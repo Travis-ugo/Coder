@@ -30,7 +30,20 @@ class _HomeTabletState extends State<HomeTablet> {
             Stack(
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(left: 80, top: 50),
+                  padding: const EdgeInsets.all(62.0),
+                  child: Center(
+                    child: IconButton(
+                      icon: (isColored ? moon : sun),
+                      onPressed: () {
+                        setState(() {
+                          isColored = isColored == true ? false : true;
+                        });
+                      },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(left: 80, top: 80),
                   child: Container(
                     height: MediaQuery.of(context).size.height,
                     width: MediaQuery.of(context).size.width,
@@ -101,18 +114,6 @@ class _HomeTabletState extends State<HomeTablet> {
                         ),
                       ],
                     ),
-                  ),
-                ),
-                Positioned(
-                  top: 25,
-                  left: MediaQuery.of(context).size.width / 3,
-                  child: IconButton(
-                    icon: (isColored ? moon : sun),
-                    onPressed: () {
-                      setState(() {
-                        isColored = isColored == true ? false : true;
-                      });
-                    },
                   ),
                 ),
                 Menu(),

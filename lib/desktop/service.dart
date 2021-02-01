@@ -23,7 +23,20 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Padding(
-                  padding: const EdgeInsets.only(top: 200, bottom: 10),
+                  padding: const EdgeInsets.all(65.0),
+                  child: Center(
+                    child: IconButton(
+                      icon: (isColored ? moon : sun),
+                      onPressed: () {
+                        setState(() {
+                          isColored = isColored == true ? false : true;
+                        });
+                      },
+                    ),
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.only(top: 100, bottom: 10),
                   child: Text(
                     'WHAT.',
                     style: GoogleFonts.varelaRound(
@@ -232,18 +245,6 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                 SizedBox(height: MediaQuery.of(context).size.height / 3),
                 DesktopFooter()
               ],
-            ),
-          ),
-          Positioned(
-            top: 25,
-            left: MediaQuery.of(context).size.width / 3,
-            child: IconButton(
-              icon: (isColored ? moon : sun),
-              onPressed: () {
-                setState(() {
-                  isColored = isColored == true ? false : true;
-                });
-              },
             ),
           ),
           Menu(),

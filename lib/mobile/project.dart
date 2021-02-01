@@ -33,7 +33,7 @@ class _MobileProjectState extends State<MobileProject> {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(top: 18.0),
+                          padding: const EdgeInsets.only(top: 20.0),
                           child: IconButton(
                             icon: (isColored ? mMoon : mSun),
                             onPressed: () {
@@ -48,7 +48,7 @@ class _MobileProjectState extends State<MobileProject> {
                           textAlign: TextAlign.center,
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 46,
+                              fontSize: 42,
                               color: (isColored
                                   ? Color(0xFF303030)
                                   : Color(0xFFf6f6f6)),
@@ -68,7 +68,7 @@ class _MobileProjectState extends State<MobileProject> {
                   ),
                   Column(
                     children: [
-                      SizedBox(height: 40),
+                      SizedBox(height: 200),
                       Center(
                         child: Text(
                           'SELECT PROJECT',

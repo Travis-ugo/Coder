@@ -86,7 +86,7 @@ class MobileData extends StatelessWidget {
             style: GoogleFonts.varelaRound(
               textStyle: TextStyle(
                 color: (isColored ? Color(0xFF3D3D3D) : Color(0xFFf6f6f6)),
-                fontSize: 50,
+                fontSize: 38,
                 fontWeight: FontWeight.w600,
               ),
             ),

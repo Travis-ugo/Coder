@@ -37,22 +37,22 @@ class _MobileState extends State<Mobile> {
                             });
                           },
                         ),
-                        SizedBox(height: 70),
+                        SizedBox(height: 60),
                         CircleAvatar(
                           backgroundColor: Colors.transparent,
                           backgroundImage: AssetImage('assets/black..jpg'),
-                          radius: 95,
+                          radius: 90,
                         ),
                         SizedBox(height: 70),
                         Text(
                           "Hi, i'm Travis Okonicha",
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontWeight: FontWeight.w800,
-                              fontSize: 26,
-                              letterSpacing: 1.2,
+                              fontWeight: FontWeight.w700,
+                              fontSize: 24,
+                              letterSpacing: 0.8,
                               color: (isColored
-                                  ? Color(0xFF303030)
+                                  ? Color(0xFF3F3F3F)
                                   : Color(0xFFf6f6f6)),
                             ),
                           ),
@@ -64,17 +64,17 @@ class _MobileState extends State<Mobile> {
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
                               fontWeight: FontWeight.w100,
-                              fontSize: 14,
+                              fontSize: 10,
                               letterSpacing: 0.9,
                               color: (isColored
-                                  ? Color(0xFF303030)
+                                  ? Color(0xFF3F3F3F)
                                   : Color(0xFFf6f6f6)),
                             ),
                           ),
                         ),
-                        SizedBox(height: 30),
+                        SizedBox(height: 25),
                         MyIcon(),
-                        SizedBox(height: 70),
+                        SizedBox(height: 50),
                         Text(
                           'Travis-ugo',
                           style: GoogleFonts.varelaRound(
@@ -93,8 +93,9 @@ class _MobileState extends State<Mobile> {
                           CupertinoIcons.chevron_compact_down,
                           size: 45,
                           color: (isColored
-                              ? Color(0xFF3D3D3D)
-                              : Color(0xFFf6f6f6)),
+                                  ? Color(0xFF3D3D3D)
+                                  : Color(0xFFf6f6f6))
+                              .withOpacity(0.3),
                         ),
                       ],
                     ),
@@ -111,7 +112,7 @@ class _MobileState extends State<Mobile> {
                                 ? Color(0xFF303030)
                                 : Color(0xFFf6f6f6)),
                             letterSpacing: 0.5,
-                            fontSize: 12,
+                            fontSize: 10,
                             fontWeight: FontWeight.w500,
                           ),
                         ),
@@ -126,7 +127,7 @@ class _MobileState extends State<Mobile> {
                                 : Color(0xFFf6f6f6)),
                             fontWeight: FontWeight.w400,
                             letterSpacing: 0.5,
-                            fontSize: 18,
+                            fontSize: 16,
                           ),
                         ),
                         textAlign: TextAlign.center,
@@ -142,7 +143,7 @@ class _MobileState extends State<Mobile> {
                                 : Color(0xFFf6f6f6)),
                             fontWeight: FontWeight.w100,
                             letterSpacing: 0.3,
-                            fontSize: 14,
+                            fontSize: 12,
                           ),
                         ),
                       ),

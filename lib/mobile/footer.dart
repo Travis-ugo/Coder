@@ -15,9 +15,10 @@ class MobileFooter extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SizedBox(height: MediaQuery.of(context).size.height / 12),
-          Divider(
-            color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
-            height: 12,
+          Container(
+            height: 0.6,
+            width: MediaQuery.of(context).size.width,
+            color: (isColored ? Color(0xFF3F3F3F) : Color(0xFFf6f6f6)),
           ),
           SizedBox(height: MediaQuery.of(context).size.height / 40),
           Row(
@@ -30,7 +31,7 @@ class MobileFooter extends StatelessWidget {
                   textStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                    fontSize: MediaQuery.of(context).size.height / 10,
+                    fontSize: MediaQuery.of(context).size.height / 14,
                     letterSpacing: 0.5,
                   ),
                 ),
@@ -39,9 +40,9 @@ class MobileFooter extends StatelessWidget {
                 'Travis-ugo',
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
-                    color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+                    fontSize: 14,
+                    fontWeight: FontWeight.w300,
+                    color: (isColored ? Color(0xFF3B3B3B) : Color(0xFFf6f6f6)),
                   ),
                 ),
               ),
@@ -51,15 +52,20 @@ class MobileFooter extends StatelessWidget {
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              Divider(indent: 160, color: Colors.white, height: 1),
+              Container(
+                height: 0.6,
+                width: MediaQuery.of(context).size.width / 2.5,
+                color: (isColored ? Color(0xFF3F3F3F) : Color(0xFFf6f6f6)),
+              ),
+
               SizedBox(height: MediaQuery.of(context).size.height / 40),
               Text(
                 'lets talk,\nlets work,\nto create beauty',
                 textAlign: TextAlign.end,
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w400,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w300,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                   ),
                 ),
@@ -74,8 +80,8 @@ class MobileFooter extends StatelessWidget {
                   'thrinitee@gmail.com',
                   style: GoogleFonts.varelaRound(
                     textStyle: TextStyle(
-                      fontSize: 16,
-                      fontWeight: FontWeight.w400,
+                      fontSize: 14,
+                      fontWeight: FontWeight.w300,
                       color:
                           (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                     ),
@@ -86,17 +92,22 @@ class MobileFooter extends StatelessWidget {
                 '+234 9055758751',
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w400,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                    fontSize: 16,
+                    fontSize: 14,
                   ),
                 ),
               ),
               SizedBox(height: MediaQuery.of(context).size.height / 40),
-              Divider(
-                color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                height: 12,
+              Container(
+                height: 0.6,
+                width: MediaQuery.of(context).size.width,
+                color: (isColored ? Color(0xFF3F3F3F) : Color(0xFFf6f6f6)),
               ),
+              // Divider(
+              //   color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+              //   height: 12,
+              // ),
               SizedBox(height: MediaQuery.of(context).size.height / 50),
               IconButton(
                 icon: Icon(MdiIcons.twitter),

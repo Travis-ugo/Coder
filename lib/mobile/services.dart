@@ -49,7 +49,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w600,
                               letterSpacing: 0.5,
-                              fontSize: 46,
+                              fontSize: 42,
                             ),
                           ),
                         ),
@@ -92,18 +92,18 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w500,
                               letterSpacing: 0.5,
-                              fontSize: 26,
+                              fontSize: 23,
                             ),
                           ),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(height: 15),
                         Text(
-                          'Consistency is all i need to succed Hard work and Practice will do the magic Hard work and Practice  succed Hard work and Practice will succed Hard work and Practice will',
+                          'Consistency is all i need to succed Hard work and Practice will do the magic Hard work and Practice  succed',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 14,
+                              fontSize: 12,
                               fontWeight: FontWeight.w100,
                               letterSpacing: 0.3,
                               color: (isColored
@@ -117,7 +117,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                           'SERVICES',
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               letterSpacing: 1.0,
                               color: (isColored
@@ -141,7 +141,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                           : Color(0xFFf6f6f6)),
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 0.5,
-                                      fontSize: 24,
+                                      fontSize: 22,
                                     ),
                                   ),
                                 ),
@@ -150,7 +150,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'Mobile Apps',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -162,7 +162,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'Web Dev',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -184,7 +184,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                           : Color(0xFFf6f6f6)),
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 0.5,
-                                      fontSize: 24,
+                                      fontSize: 22,
                                     ),
                                   ),
                                 ),
@@ -193,7 +193,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'UI Design',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -205,7 +205,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'UX Design',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -227,7 +227,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                           : Color(0xFFf6f6f6)),
                                       fontWeight: FontWeight.w500,
                                       letterSpacing: 0.5,
-                                      fontSize: 24,
+                                      fontSize: 22,
                                     ),
                                   ),
                                 ),
@@ -236,7 +236,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'FireBase',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -248,7 +248,7 @@ class _ServiceMobileState extends State<ServiceMobile> {
                                   'AWS',
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       fontWeight: FontWeight.w200,
                                       color: (isColored
                                           ? Color(0xFF303030)

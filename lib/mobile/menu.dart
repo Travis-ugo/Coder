@@ -37,8 +37,8 @@ class _MenuMobileState extends State<MobileMenu> {
                 'Resume',
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontSize: 16,
-                    fontWeight: FontWeight.w500,
+                    fontSize: 14,
+                    fontWeight: FontWeight.w300,
                     letterSpacing: 1,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                   ),
@@ -47,7 +47,7 @@ class _MenuMobileState extends State<MobileMenu> {
               IconButton(
                 icon: Icon(
                   Icons.menu,
-                  size: 30,
+                  size: 24,
                   color: (isColored ? Color(0xFF424242) : Color(0xFFf6f6f6)),
                 ),
                 onPressed: () {
@@ -76,7 +76,7 @@ class _MenuMobileState extends State<MobileMenu> {
                         mouseCursor: SystemMouseCursors.click,
                         icon: Icon(
                           CupertinoIcons.xmark,
-                          size: 30,
+                          size: 25,
                           color: Color(0xFF525252),
                         ),
                         onPressed: () {
@@ -100,7 +100,7 @@ class _MenuMobileState extends State<MobileMenu> {
                       'WHO',
                       style: GoogleFonts.varelaRound(
                         textStyle: TextStyle(
-                          fontSize: 18,
+                          fontSize: 14,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 1,
                           color: Color(0xFF303030),
@@ -120,7 +120,7 @@ class _MenuMobileState extends State<MobileMenu> {
                       'WORK',
                       style: GoogleFonts.varelaRound(
                         textStyle: TextStyle(
-                          fontSize: 18,
+                          fontSize: 14,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 1,
                           color: Color(0xFF303030),
@@ -140,7 +140,7 @@ class _MenuMobileState extends State<MobileMenu> {
                       'WHAT',
                       style: GoogleFonts.varelaRound(
                         textStyle: TextStyle(
-                            fontSize: 18,
+                            fontSize: 14,
                             fontWeight: FontWeight.w500,
                             letterSpacing: 1,
                             color: Color(0xFF303030)),
@@ -162,8 +162,8 @@ class _MenuMobileState extends State<MobileMenu> {
                           'GET IN TOUCH',
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 12,
-                              fontWeight: FontWeight.w500,
+                              fontSize: 10,
+                              fontWeight: FontWeight.w400,
                               letterSpacing: 1,
                               color: Color(0xFF303030),
                             ),
@@ -178,8 +178,8 @@ class _MenuMobileState extends State<MobileMenu> {
                             'Thrinitee@gmail.com',
                             style: GoogleFonts.varelaRound(
                               textStyle: TextStyle(
-                                fontSize: 18,
-                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w400,
                                 letterSpacing: 1,
                                 color: Color(0xFF303030),
                               ),

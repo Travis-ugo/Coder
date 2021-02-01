@@ -78,31 +78,31 @@ class MyIcon extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        IconButton(
-          icon: Icon(MdiIcons.email),
-          color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
-          iconSize: 14,
-          onPressed: () async =>
-              await launch(Uri.parse('https://thrinitee@gmail.com').toString()),
-        ),
+        // IconButton(
+        //   icon: Icon(MdiIcons.email),
+        //   color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
+        //   iconSize: 14,
+        //   onPressed: () async =>
+        //       await launch(Uri.parse('https://thrinitee@gmail.com').toString()),
+        // ),
         IconButton(
           icon: Icon(MdiIcons.twitter),
           color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
-          iconSize: 14,
+          iconSize: 18,
           onPressed: () async => await launch(
               Uri.parse('https://twitter.com/Travis86622225').toString()),
         ),
         IconButton(
           icon: Icon(MdiIcons.github),
           color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
-          iconSize: 14,
+          iconSize: 18,
           onPressed: () async => await launch(
               Uri.parse('https://github.com/Travis-ugo').toString()),
         ),
         IconButton(
           icon: Icon(MdiIcons.linkedin),
           color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
-          iconSize: 14,
+          iconSize: 18,
           onPressed: () async => await launch(Uri.parse(
                   'https://www.linkedin.com/in/travis-okonicha-66a15b1b8/')
               .toString()),
@@ -136,7 +136,7 @@ class RecentWork extends StatelessWidget {
             textAlign: TextAlign.center,
             style: GoogleFonts.varelaRound(
               textStyle: TextStyle(
-                fontSize: 42,
+                fontSize: 38,
                 color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
                 fontWeight: FontWeight.w600,
               ),
@@ -148,8 +148,8 @@ class RecentWork extends StatelessWidget {
               Navigator.pushNamed(context, '/projects');
             },
             child: Container(
-              width: 170,
-              height: 50,
+              width: 180,
+              height: 48,
               decoration: BoxDecoration(
                 border: Border.all(
                   color: (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
@@ -162,7 +162,7 @@ class RecentWork extends StatelessWidget {
                     'View Recent work',
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
-                        fontSize: 12,
+                        fontSize: 10,
                         fontWeight: FontWeight.w500,
                         color:
                             (isColored ? Color(0xFF303030) : Color(0xFFEBEBEB)),
@@ -342,15 +342,15 @@ class FooterIcon extends StatelessWidget {
                 .toString());
           },
         ),
-        IconButton(
-          icon: Icon(MdiIcons.basketball),
-          color: Color(0xFF303030),
-          iconSize: 16,
-          onPressed: () async {
-            await launch(
-                Uri.parse('https://dribbble.com/travis-ugo').toString());
-          },
-        ),
+        // IconButton(
+        //   icon: Icon(MdiIcons.basketball),
+        //   color: Color(0xFF303030),
+        //   iconSize: 16,
+        //   onPressed: () async {
+        //     await launch(
+        //         Uri.parse('https://dribbble.com/travis-ugo').toString());
+        //   },
+        // ),
       ],
     );
   }
