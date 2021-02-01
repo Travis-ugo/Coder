@@ -181,10 +181,10 @@ class _MenuRespState extends State<Menu> {
                           'Thrinitee@gmail.com',
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: MediaQuery.of(context).size.width / 12,
+                              fontSize: MediaQuery.of(context).size.width / 14,
                               fontWeight: FontWeight.w700,
                               color: (isColored
-                                  ? Color(0xFF303030)
+                                  ? Color(0xFF3F3F3F)
                                   : Color(0xFFf6f6f6)),
                             ),
                           ),
