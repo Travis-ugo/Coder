@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travis/utils/recent.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class MobileProjectDisplay extends StatelessWidget {
   @override
@@ -19,7 +21,10 @@ class MobileProjectDisplay extends StatelessWidget {
                 children: [
                   SingleChildScrollView(
                     child: Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 50),
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 50,
+                        vertical: 30,
+                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -33,15 +38,17 @@ class MobileProjectDisplay extends StatelessWidget {
                                 children: [
                                   Text(
                                     'Year',
-                                    style:
-                                        TextStyle(fontWeight: FontWeight.w600),
+                                    textAlign: TextAlign.start,
+                                    style: TextStyle(
+                                        fontWeight: FontWeight.w400,
+                                        fontSize: 10),
                                   ),
                                   Text(
                                     data['year'],
                                     style: GoogleFonts.varelaRound(
                                       textStyle: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w300,
+                                        fontSize: 14,
+                                        fontWeight: FontWeight.w100,
                                         color: Colors.black,
                                         letterSpacing: 0.5,
                                       ),
@@ -57,16 +64,17 @@ class MobileProjectDisplay extends StatelessWidget {
                                     'Tools',
                                     textAlign: TextAlign.start,
                                     style: TextStyle(
-                                      fontWeight: FontWeight.w600,
+                                      fontWeight: FontWeight.w400,
+                                      fontSize: 10,
                                     ),
                                   ),
                                   Text(
                                     data['tool'],
                                     style: GoogleFonts.varelaRound(
                                       textStyle: TextStyle(
-                                        fontSize: 16,
-                                        fontWeight: FontWeight.w300,
-                                        color: Colors.black,
+                                        fontSize: 12,
+                                        fontWeight: FontWeight.w100,
+                                        //color: Colors.black,
                                         letterSpacing: 0.5,
                                       ),
                                     ),
@@ -80,8 +88,8 @@ class MobileProjectDisplay extends StatelessWidget {
                             data['title'],
                             style: GoogleFonts.varelaRound(
                               textStyle: TextStyle(
-                                fontWeight: FontWeight.w400,
-                                fontSize: 24,
+                                fontWeight: FontWeight.w300,
+                                fontSize: 20,
                                 letterSpacing: 0.5,
                                 color: Color(0xFF3D68DF),
                               ),
@@ -93,9 +101,9 @@ class MobileProjectDisplay extends StatelessWidget {
                             data['subtitle'],
                             style: GoogleFonts.varelaRound(
                               textStyle: TextStyle(
-                                fontSize: 20,
+                                fontSize: 18,
                                 letterSpacing: 0.5,
-                                fontWeight: FontWeight.w400,
+                                fontWeight: FontWeight.w300,
                               ),
                             ),
                             textAlign: TextAlign.start,
@@ -105,28 +113,20 @@ class MobileProjectDisplay extends StatelessWidget {
                             data['info'],
                             style: GoogleFonts.varelaRound(
                               textStyle: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w300,
-                                color: Colors.black,
+                                fontSize: 12,
+                                fontWeight: FontWeight.w100,
                                 letterSpacing: 0.5,
                               ),
                             ),
                             textAlign: TextAlign.start,
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.start,
-                            children: [
-                              MyIcon(),
-                            ],
-                          ),
                         ],
                       ),
                     ),
                   ),
-                  //MobileFooter(),
-                  SizedBox(height: 20),
                   Container(
-                    height: 200,
+                    color: Colors.grey[100],
+                    height: 230,
                     width: MediaQuery.of(context).size.width,
                     child: Image.asset(
                       data['imageurl'],
@@ -142,16 +142,23 @@ class MobileProjectDisplay extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Icon(Icons.email),
+                  IconButton(
+                    icon: Icon(
+                      FeatherIcons.github,
+                      size: 15,
+                    ),
+                    onPressed: () async {
+                      await launch(Uri.parse(data['github']).toString());
+                    },
+                  ),
                   GestureDetector(
                     onTap: () => Navigator.pop(context),
                     child: Text(
                       'BACK TO PROJETS',
                       style: GoogleFonts.varelaRound(
                         textStyle: TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.black,
+                          fontSize: 14,
+                          fontWeight: FontWeight.w200,
                           letterSpacing: 0.5,
                         ),
                       ),

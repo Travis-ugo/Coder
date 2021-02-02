@@ -49,7 +49,7 @@ class _MobileState extends State<Mobile> {
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
                               fontWeight: FontWeight.w700,
-                              fontSize: 24,
+                              fontSize: 22,
                               letterSpacing: 0.8,
                               color: (isColored
                                   ? Color(0xFF3F3F3F)
@@ -59,12 +59,12 @@ class _MobileState extends State<Mobile> {
                         ),
                         SizedBox(height: 20),
                         Text(
-                          '''i design and build beautiful mobile and desktop for users design and build beautiful''',
+                          '\ni design and build beautiful mobile and desktop user friendly aplications with perfection',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
                               fontWeight: FontWeight.w100,
-                              fontSize: 10,
+                              fontSize: 12,
                               letterSpacing: 0.9,
                               color: (isColored
                                   ? Color(0xFF3F3F3F)
@@ -118,32 +118,38 @@ class _MobileState extends State<Mobile> {
                         ),
                       ),
                       SizedBox(height: 50),
-                      Text(
-                        'Consistency is all i need to Hard work\nwill do the magic and Practice',
-                        style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
-                            color: (isColored
-                                ? Color(0xFF303030)
-                                : Color(0xFFf6f6f6)),
-                            fontWeight: FontWeight.w400,
-                            letterSpacing: 0.5,
-                            fontSize: 16,
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 30),
+                        child: Text(
+                          'Progresive software developer specialize in creating beatiful UI and fast mobile, desktop applications',
+                          style: GoogleFonts.varelaRound(
+                            textStyle: TextStyle(
+                              color: (isColored
+                                  ? Color(0xFF2E2E2E)
+                                  : Color(0xFFf6f6f6)),
+                              fontWeight: FontWeight.w500,
+                              letterSpacing: 0.5,
+                              fontSize: 16,
+                            ),
                           ),
+                          textAlign: TextAlign.center,
                         ),
-                        textAlign: TextAlign.center,
                       ),
-                      SizedBox(height: 20),
-                      Text(
-                        'Consistency is all i need to succed\nHard work and Practice will do the magic\nHard work and Practice ',
-                        textAlign: TextAlign.center,
-                        style: GoogleFonts.varelaRound(
-                          textStyle: TextStyle(
-                            color: (isColored
-                                ? Color(0xFF303030)
-                                : Color(0xFFf6f6f6)),
-                            fontWeight: FontWeight.w100,
-                            letterSpacing: 0.3,
-                            fontSize: 12,
+                      SizedBox(height: 10),
+                      Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 50),
+                        child: Text(
+                          'with progressing skills, i design and build awesome user friendly applications that run with speed  as well as PWS web applications',
+                          textAlign: TextAlign.center,
+                          style: GoogleFonts.varelaRound(
+                            textStyle: TextStyle(
+                              color: (isColored
+                                  ? Color(0xFF303030)
+                                  : Color(0xFFf6f6f6)),
+                              fontWeight: FontWeight.w100,
+                              letterSpacing: 0.3,
+                              fontSize: 12,
+                            ),
                           ),
                         ),
                       ),

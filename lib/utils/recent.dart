@@ -159,7 +159,7 @@ class RecentWork extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'View Recent work',
+                    'VIEW ALL WORK',
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
                         fontSize: 10,
@@ -316,9 +316,17 @@ class FooterIcon extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         IconButton(
+          icon: Icon(MdiIcons.email),
+          color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
+          iconSize: 16,
+          onPressed: () async {
+            await launch(Uri.parse('https://thrinitee@gmail.com').toString());
+          },
+        ),
+        IconButton(
           icon: Icon(MdiIcons.twitter),
-          color: Color(0xFF303030),
-          iconSize: 14,
+          color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
+          iconSize: 16,
           onPressed: () async {
             await launch(
                 Uri.parse('https://twitter.com/Travis86622225').toString());
@@ -326,31 +334,31 @@ class FooterIcon extends StatelessWidget {
         ),
         IconButton(
           icon: Icon(MdiIcons.github),
-          color: Color(0xFF303030),
-          iconSize: 14,
+          color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
+          iconSize: 16,
           onPressed: () async {
             await launch(Uri.parse('https://github.com/Travis-ugo').toString());
           },
         ),
         IconButton(
           icon: Icon(MdiIcons.linkedin),
-          color: Color(0xFF303030),
-          iconSize: 14,
+          color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
+          iconSize: 16,
           onPressed: () async {
             await launch(Uri.parse(
                     'https://www.linkedin.com/in/travis-okonicha-66a15b1b8/')
                 .toString());
           },
         ),
-        // IconButton(
-        //   icon: Icon(MdiIcons.basketball),
-        //   color: Color(0xFF303030),
-        //   iconSize: 16,
-        //   onPressed: () async {
-        //     await launch(
-        //         Uri.parse('https://dribbble.com/travis-ugo').toString());
-        //   },
-        // ),
+        IconButton(
+          icon: Icon(MdiIcons.basketball),
+          color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
+          iconSize: 16,
+          onPressed: () async {
+            await launch(
+                Uri.parse('https://dribbble.com/travis-ugo').toString());
+          },
+        ),
       ],
     );
   }

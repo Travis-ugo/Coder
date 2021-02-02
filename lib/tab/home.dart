@@ -64,7 +64,7 @@ class _HomeTabletState extends State<HomeTablet> {
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
                                       fontWeight: FontWeight.w800,
-                                      fontSize: 32,
+                                      fontSize: 36,
                                       letterSpacing: 1.2,
                                       color: (isColored
                                           ? Color(0xFF303030)
@@ -78,10 +78,10 @@ class _HomeTabletState extends State<HomeTablet> {
                                   style: GoogleFonts.varelaRound(
                                     textStyle: TextStyle(
                                       fontWeight: FontWeight.w100,
-                                      fontSize: 14,
+                                      fontSize: 12,
                                       letterSpacing: 1.1,
                                       color: (isColored
-                                          ? Color(0xFF3D3D3D)
+                                          ? Color(0xFF313033)
                                           : Color(0xFFf6f6f6)),
                                     ),
                                   ),
@@ -100,7 +100,7 @@ class _HomeTabletState extends State<HomeTablet> {
                                 backgroundColor: Colors.transparent,
                                 backgroundImage:
                                     AssetImage('assets/black..jpg'),
-                                radius: 70,
+                                radius: 75,
                               ),
                             ),
                           ],
@@ -119,39 +119,39 @@ class _HomeTabletState extends State<HomeTablet> {
                 Menu(),
               ],
             ),
-            SizedBox(height: 50),
+            SizedBox(height: 70),
             Text(
               'YOUNG AND CREATIVE',
               style: GoogleFonts.varelaRound(
                 textStyle: TextStyle(
-                  color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                  fontWeight: FontWeight.w400,
+                  color: (isColored ? Color(0xFF4D4D4D) : Color(0xFFf6f6f6)),
+                  fontWeight: FontWeight.w300,
                   letterSpacing: 0.5,
-                  fontSize: 12,
+                  fontSize: 10,
                 ),
               ),
             ),
             SizedBox(height: 50),
             Text(
-              'Consistency is all i need to Hard work\nwill do the magic and Practice',
+              'Progresive software developer specialize in creating\nbeatiful UI and fast mobile, desktop applications',
               style: GoogleFonts.varelaRound(
                 textStyle: TextStyle(
-                  color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                  fontWeight: FontWeight.w400,
+                  color: (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                  fontWeight: FontWeight.w800,
                   letterSpacing: 0.5,
-                  fontSize: 18,
+                  fontSize: 22,
                 ),
               ),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 20),
             Text(
-              'Consistency is all i need to succed\nHard work and Practice will do the magic\nHard work and Practice ',
+              'with progressing skills, i design and build awesome user friendly applications\nthat run with speed  as well as PWS web applications',
               textAlign: TextAlign.center,
               style: GoogleFonts.varelaRound(
                 textStyle: TextStyle(
-                  color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                  fontWeight: FontWeight.w300,
+                  color: (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                  fontWeight: FontWeight.w200,
                   letterSpacing: 0.3,
                   fontSize: 14,
                 ),
@@ -192,11 +192,11 @@ class RecentTablet extends StatelessWidget {
           const SizedBox(height: 20),
           InkWell(
             onTap: () {
-              Navigator.pushNamed(context, '/mobileproject');
+              Navigator.pushNamed(context, '/projects');
             },
             child: Container(
-              width: 170, //MediaQuery.of(context).size.width / 2.3,
-              height: 40, //MediaQuery.of(context).size.height / 16,
+              width: 170,
+              height: 40,
               decoration: BoxDecoration(
                 border: Border.all(
                   color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
@@ -206,13 +206,13 @@ class RecentTablet extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
                   Text(
-                    'View Recent work',
+                    'VIEW ALL WORK',
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w500,
+                        fontSize: 9,
+                        fontWeight: FontWeight.w600,
                         color:
-                            (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+                            (isColored ? Color(0xFF323233) : Color(0xFFf6f6f6)),
                       ),
                     ),
                   ),

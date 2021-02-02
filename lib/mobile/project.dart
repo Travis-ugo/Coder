@@ -56,12 +56,15 @@ class _MobileProjectState extends State<MobileProject> {
                             ),
                           ),
                         ),
-                        Icon(
-                          CupertinoIcons.chevron_compact_down,
-                          size: 45,
-                          color: (isColored
-                              ? Color(0xFF3D3D3D)
-                              : Color(0xFFf6f6f6)),
+                        Padding(
+                          padding: const EdgeInsets.all(25.0),
+                          child: Icon(
+                            CupertinoIcons.chevron_compact_down,
+                            size: 45,
+                            color: (isColored
+                                ? Color(0xFF3D3D3D)
+                                : Color(0xFFf6f6f6)),
+                          ),
                         ),
                       ],
                     ),

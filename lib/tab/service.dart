@@ -1,17 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travis/desktop/footer.dart';
 import 'package:travis/desktop/menu.dart';
 import 'package:travis/utils/pallets.dart';
 
-import 'footer.dart';
-
-class ServiceDesktop extends StatefulWidget {
+class ServiceTab extends StatefulWidget {
   @override
-  _ServiceDesktopState createState() => _ServiceDesktopState();
+  _ServiceTabState createState() => _ServiceTabState();
 }
 
-class _ServiceDesktopState extends State<ServiceDesktop> {
+class _ServiceTabState extends State<ServiceTab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,37 +58,37 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                   'COOL AND CRAFTY',
                   style: GoogleFonts.varelaRound(
                     textStyle: TextStyle(
-                      fontSize: 12,
-                      fontWeight: FontWeight.w600,
+                      fontSize: 10,
+                      fontWeight: FontWeight.w300,
                       color:
-                          (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                      letterSpacing: 1.0,
+                          (isColored ? Color(0xFF4D4D4D) : Color(0xFFf6f6f6)),
+                      letterSpacing: 0.5,
                     ),
                   ),
                 ),
                 SizedBox(height: 70),
                 Text(
-                  'I collaborate with brands and clients to create memorable experiences',
+                  'I collaborate with brands and clients to\ncreate memorable experiences',
                   style: GoogleFonts.varelaRound(
                     textStyle: TextStyle(
                       color:
-                          (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                      fontWeight: FontWeight.w700,
+                          (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                      fontWeight: FontWeight.w800,
                       letterSpacing: 0.5,
-                      fontSize: 32,
+                      fontSize: 22,
                     ),
                   ),
                   textAlign: TextAlign.center,
                 ),
                 SizedBox(height: 20),
                 Text(
-                  'Think of me as more of a creative partner than a resource. this means we have shared perspective on how we can work together to achieve your goals. Basically your new friend',
+                  'Think of me as more of a creative partner than a resource.\nthis means we have shared perspective on how we can work\ntogether to achieve your goals. Basically your new friend',
                   textAlign: TextAlign.center,
                   style: GoogleFonts.varelaRound(
                     textStyle: TextStyle(
                       color:
-                          (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                      fontWeight: FontWeight.w300,
+                          (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                      fontWeight: FontWeight.w200,
                       letterSpacing: 0.3,
                       fontSize: 12,
                     ),
@@ -103,7 +102,7 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                       fontSize: 12,
                       fontWeight: FontWeight.w700,
                       color:
-                          (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+                          (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
                       letterSpacing: 1.0,
                     ),
                   ),
@@ -123,7 +122,7 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w700,
                               letterSpacing: 0.5,
-                              fontSize: 42,
+                              fontSize: 32,
                             ),
                           ),
                         ),
@@ -178,7 +177,7 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w600,
                               letterSpacing: 0.5,
-                              fontSize: 42,
+                              fontSize: 32,
                             ),
                           ),
                         ),
@@ -221,7 +220,7 @@ class _ServiceDesktopState extends State<ServiceDesktop> {
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w600,
                               letterSpacing: 0.5,
-                              fontSize: 42,
+                              fontSize: 32,
                             ),
                           ),
                         ),

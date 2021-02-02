@@ -53,27 +53,30 @@ class _ServiceMobileState extends State<ServiceMobile> {
                             ),
                           ),
                         ),
-                        Icon(
-                          CupertinoIcons.chevron_compact_down,
-                          size: 45,
-                          color: (isColored
-                              ? Color(0xFF3D3D3D)
-                              : Color(0xFFf6f6f6)),
+                        Padding(
+                          padding: const EdgeInsets.all(25.0),
+                          child: Icon(
+                            CupertinoIcons.chevron_compact_down,
+                            size: 45,
+                            color: (isColored
+                                ? Color(0xFF3D3D3D)
+                                : Color(0xFFf6f6f6)),
+                          ),
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 30),
+                    padding: const EdgeInsets.symmetric(horizontal: 40),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         SizedBox(height: 180),
                         Text(
-                          'CREATIVE RASTER',
+                          'COOL AND CRAFTY',
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.w500,
                               color: (isColored
                                   ? Color(0xFF303030)
@@ -84,30 +87,30 @@ class _ServiceMobileState extends State<ServiceMobile> {
                         ),
                         SizedBox(height: 80),
                         Text(
-                          'Consistency is all i need to Hard work will do the magic and Practice',
+                          'I collaborate with brands and clients to create memorable experiences',
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
                               color: (isColored
-                                  ? Color(0xFF303030)
+                                  ? Color(0xFF424242)
                                   : Color(0xFFf6f6f6)),
                               fontWeight: FontWeight.w500,
                               letterSpacing: 0.5,
-                              fontSize: 23,
+                              fontSize: 19,
                             ),
                           ),
                           textAlign: TextAlign.center,
                         ),
                         SizedBox(height: 15),
                         Text(
-                          'Consistency is all i need to succed Hard work and Practice will do the magic Hard work and Practice  succed',
+                          'Think of me as more of a creative partner than a resource. this means we have shared perspective on how we can work together to achieve your goals. Basically your new friend',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(
-                              fontSize: 12,
+                              fontSize: 10,
                               fontWeight: FontWeight.w100,
-                              letterSpacing: 0.3,
+                              letterSpacing: 0.5,
                               color: (isColored
-                                  ? Color(0xFF303030)
+                                  ? Color(0xFF3A3A3A)
                                   : Color(0xFFf6f6f6)),
                             ),
                           ),

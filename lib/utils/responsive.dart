@@ -9,6 +9,8 @@ import 'package:travis/mobile/project.dart';
 import 'package:travis/mobile/project_display.dart';
 import 'package:travis/mobile/services.dart';
 import 'package:travis/tab/home.dart';
+import 'package:travis/tab/project.dart';
+import 'package:travis/tab/service.dart';
 
 class Response extends StatelessWidget {
   @override
@@ -26,7 +28,7 @@ class Service extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: ServiceMobile(),
-      //tablet: ServiceMobile(),
+      tablet: ServiceTab(),
       desktop: ServiceDesktop(),
     );
   }
@@ -37,7 +39,7 @@ class Projects extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenTypeLayout(
       mobile: MobileProject(),
-      //tablet: HomeTablet(),
+      tablet: TabProject(),
       desktop: Project(),
     );
   }

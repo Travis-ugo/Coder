@@ -8,6 +8,7 @@ class Data {
   final String whiteImage;
   final String tool;
   final String year;
+  final String github;
 
   Data({
     this.tool = '',
@@ -17,6 +18,7 @@ class Data {
     @required this.imageurl,
     @required this.subtitle,
     @required this.whiteImage,
+    @required this.github,
   });
 }
 
@@ -30,10 +32,11 @@ this web appliction diplays skills and projects of 'Travis Okonicha Ugochukwu'.
 this web application is written in dart lang with googles flutter framework,
 and hosted online with googles firebase system.
   ''',
-  imageurl: 'black..jpg',
+  imageurl: 'assets/black..jpg',
   whiteImage: 'black..jpg',
   tool: 'Dart lang\nFlutter\nfirebase\nVs Code\nAdobe Xd',
   year: '2020',
+  github: 'https://github.com/Travis-ugo/Coder',
 );
 final Data telegram = Data(
   title: 'User Bot',
@@ -49,6 +52,7 @@ regular check fro maintenace.
   whiteImage: 'robinic.jpg',
   tool: 'Python\nVs Code',
   year: '2020',
+  github: 'https://github.com/Travis-ugo/fx_forwarder',
 );
 
 final Data world = Data(
@@ -64,6 +68,7 @@ making it very effecient and fast.
   whiteImage: 'newsb&w.jpeg',
   tool: 'Dart lang\nFlutter\nAdobe Xd\nAndriod Studio',
   year: '2020',
+  github: 'https://github.com/Travis-ugo',
 );
 
 final Data soccer = Data(
@@ -79,4 +84,5 @@ beautiful user friendly user interface.
   whiteImage: 'soccerb&w.jpeg',
   tool: 'Adobe Xd\nFlutter\nVs Code',
   year: '2021',
+  github: 'https://github.com/Travis-ugo/New-berlin',
 );

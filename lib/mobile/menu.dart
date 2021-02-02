@@ -33,22 +33,30 @@ class _MenuMobileState extends State<MobileMenu> {
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                'Resume',
-                style: GoogleFonts.varelaRound(
-                  textStyle: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w300,
-                    letterSpacing: 1,
-                    color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+              InkWell(
+                onTap: () async {
+                  await launch(Uri.parse(
+                          'https://docs.google.com/document/d/1nKMbH01EI-gC5ubz_brdXwkJOOK2nMLLmQCe8rGzDf8/edit?usp=sharing')
+                      .toString());
+                },
+                child: Text(
+                  'Resume',
+                  style: GoogleFonts.varelaRound(
+                    textStyle: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.w300,
+                      letterSpacing: 1,
+                      color:
+                          (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
+                    ),
                   ),
                 ),
               ),
               IconButton(
                 icon: Icon(
-                  Icons.menu,
-                  size: 24,
-                  color: (isColored ? Color(0xFF424242) : Color(0xFFf6f6f6)),
+                  CupertinoIcons.equal,
+                  size: 26,
+                  color: (isColored ? Color(0xFF303030) : Color(0xFFF3F3F3)),
                 ),
                 onPressed: () {
                   open();
@@ -63,7 +71,7 @@ class _MenuMobileState extends State<MobileMenu> {
             child: AnimatedContainer(
               height: height,
               width: MediaQuery.of(context).size.width - 50,
-              color: (isColored ? Color(0xFFECECEC) : Color(0xFF666565)),
+              color: (isColored ? Color(0xFFECECEC) : Color(0xFF555555)),
               duration: Duration(milliseconds: 250),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
@@ -77,7 +85,9 @@ class _MenuMobileState extends State<MobileMenu> {
                         icon: Icon(
                           CupertinoIcons.xmark,
                           size: 25,
-                          color: Color(0xFF525252),
+                          color: (isColored
+                              ? Color(0xFF303030)
+                              : Color(0xFFF3F3F3)),
                         ),
                         onPressed: () {
                           open();
@@ -103,7 +113,9 @@ class _MenuMobileState extends State<MobileMenu> {
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 1,
-                          color: Color(0xFF303030),
+                          color: (isColored
+                              ? Color(0xFF303030)
+                              : Color(0xFFF3F3F3)),
                         ),
                       ),
                     ),
@@ -123,7 +135,9 @@ class _MenuMobileState extends State<MobileMenu> {
                           fontSize: 14,
                           fontWeight: FontWeight.w500,
                           letterSpacing: 1,
-                          color: Color(0xFF303030),
+                          color: (isColored
+                              ? Color(0xFF303030)
+                              : Color(0xFFF3F3F3)),
                         ),
                       ),
                     ),
@@ -140,10 +154,13 @@ class _MenuMobileState extends State<MobileMenu> {
                       'WHAT',
                       style: GoogleFonts.varelaRound(
                         textStyle: TextStyle(
-                            fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            letterSpacing: 1,
-                            color: Color(0xFF303030)),
+                          fontSize: 14,
+                          fontWeight: FontWeight.w500,
+                          letterSpacing: 1,
+                          color: (isColored
+                              ? Color(0xFF303030)
+                              : Color(0xFFF3F3F3)),
+                        ),
                       ),
                     ),
                   ),
@@ -154,7 +171,7 @@ class _MenuMobileState extends State<MobileMenu> {
                     height:
                         MediaQuery.of(context).size.height / 3 - 10 - suplus,
                     width: MediaQuery.of(context).size.width,
-                    color: Colors.black12,
+                    color: (isColored ? Color(0xFFC5C5C5) : Color(0xFF363636)),
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
@@ -165,24 +182,9 @@ class _MenuMobileState extends State<MobileMenu> {
                               fontSize: 10,
                               fontWeight: FontWeight.w400,
                               letterSpacing: 1,
-                              color: Color(0xFF303030),
-                            ),
-                          ),
-                        ),
-                        SizedBox(height: 10),
-                        GestureDetector(
-                          onTap: () async => await launch(
-                              Uri.parse('https://thrinitee@gmail.com')
-                                  .toString()),
-                          child: Text(
-                            'Thrinitee@gmail.com',
-                            style: GoogleFonts.varelaRound(
-                              textStyle: TextStyle(
-                                fontSize: 16,
-                                fontWeight: FontWeight.w400,
-                                letterSpacing: 1,
-                                color: Color(0xFF303030),
-                              ),
+                              color: (isColored
+                                  ? Color(0xFF303030)
+                                  : Color(0xFFF3F3F3)),
                             ),
                           ),
                         ),

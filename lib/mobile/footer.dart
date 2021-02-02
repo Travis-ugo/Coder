@@ -31,7 +31,7 @@ class MobileFooter extends StatelessWidget {
                   textStyle: TextStyle(
                     fontWeight: FontWeight.w400,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                    fontSize: MediaQuery.of(context).size.height / 14,
+                    fontSize: MediaQuery.of(context).size.height / 16,
                     letterSpacing: 0.5,
                   ),
                 ),
@@ -40,8 +40,8 @@ class MobileFooter extends StatelessWidget {
                 'Travis-ugo',
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w300,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w200,
                     color: (isColored ? Color(0xFF3B3B3B) : Color(0xFFf6f6f6)),
                   ),
                 ),
@@ -57,15 +57,14 @@ class MobileFooter extends StatelessWidget {
                 width: MediaQuery.of(context).size.width / 2.5,
                 color: (isColored ? Color(0xFF3F3F3F) : Color(0xFFf6f6f6)),
               ),
-
               SizedBox(height: MediaQuery.of(context).size.height / 40),
               Text(
                 'lets talk,\nlets work,\nto create beauty',
                 textAlign: TextAlign.end,
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontSize: 14,
-                    fontWeight: FontWeight.w300,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w200,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                   ),
                 ),
@@ -73,15 +72,15 @@ class MobileFooter extends StatelessWidget {
               SizedBox(height: MediaQuery.of(context).size.height / 40),
               FlatButton(
                 onPressed: () async {
-                  await launch(Uri.parse('https://twitter.com/Travis86622225')
-                      .toString());
+                  await launch(
+                      Uri.parse('https://thrinitee@gmail.com').toString());
                 },
                 child: Text(
                   'thrinitee@gmail.com',
                   style: GoogleFonts.varelaRound(
                     textStyle: TextStyle(
-                      fontSize: 14,
-                      fontWeight: FontWeight.w300,
+                      fontSize: 12,
+                      fontWeight: FontWeight.w200,
                       color:
                           (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                     ),
@@ -92,9 +91,9 @@ class MobileFooter extends StatelessWidget {
                 '+234 9055758751',
                 style: GoogleFonts.varelaRound(
                   textStyle: TextStyle(
-                    fontWeight: FontWeight.w400,
+                    fontWeight: FontWeight.w300,
                     color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                    fontSize: 14,
+                    fontSize: 12,
                   ),
                 ),
               ),
@@ -104,10 +103,6 @@ class MobileFooter extends StatelessWidget {
                 width: MediaQuery.of(context).size.width,
                 color: (isColored ? Color(0xFF3F3F3F) : Color(0xFFf6f6f6)),
               ),
-              // Divider(
-              //   color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-              //   height: 12,
-              // ),
               SizedBox(height: MediaQuery.of(context).size.height / 50),
               IconButton(
                 icon: Icon(MdiIcons.twitter),
@@ -139,7 +134,7 @@ class MobileFooter extends StatelessWidget {
               ),
               IconButton(
                 icon: Icon(MdiIcons.basketball),
-                color: Color(0xFF303030),
+                color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                 iconSize: 16,
                 onPressed: () async {
                   await launch(

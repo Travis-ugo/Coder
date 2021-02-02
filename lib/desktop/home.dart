@@ -40,15 +40,19 @@ class _HomeDesktopState extends State<HomeDesktop> {
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(65.0),
-                    child: Center(
-                      child: IconButton(
-                        icon: (isColored ? moon : sun),
-                        onPressed: () {
-                          setState(() {
-                            isColored = isColored == true ? false : true;
-                          });
-                        },
-                      ),
+                    child: Column(
+                      children: [
+                        Center(
+                          child: IconButton(
+                            icon: (isColored ? moon : sun),
+                            onPressed: () {
+                              setState(() {
+                                isColored = isColored == true ? false : true;
+                              });
+                            },
+                          ),
+                        ),
+                      ],
                     ),
                   ),
                   Padding(
@@ -84,7 +88,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                                     ),
                                   ),
                                   Text(
-                                    '''\ni design and build beautiful mobile and desktop for\nusers design and build beautiful''',
+                                    '''\ni design and build beautiful mobile and desktop user friendly aplications\nwith perfection''',
                                     textAlign: TextAlign.left,
                                     style: GoogleFonts.varelaRound(
                                       textStyle: TextStyle(
@@ -104,7 +108,6 @@ class _HomeDesktopState extends State<HomeDesktop> {
                                         MediaQuery.of(context).size.height / 20,
                                   ),
                                   MyIcon(),
-                                  SizedBox(height: 15),
                                 ],
                               ),
                               Hero(
@@ -119,13 +122,16 @@ class _HomeDesktopState extends State<HomeDesktop> {
                               ),
                             ],
                           ),
-                          Icon(
-                            CupertinoIcons.chevron_compact_down,
-                            size: 45,
-                            color: (isColored
-                                ? Color(0xFF3D3D3D)
-                                : Color(0xFFf6f6f6)),
+                          Center(
+                            child: Icon(
+                              CupertinoIcons.chevron_compact_down,
+                              size: 65,
+                              color: (isColored
+                                  ? Color(0xFF3D3D3D)
+                                  : Color(0xFFf6f6f6)),
+                            ),
                           ),
+                          //SizedBox(height: 5),
                         ],
                       ),
                     ),
@@ -136,7 +142,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  SizedBox(height: 50),
+                  SizedBox(height: 150),
                   Text(
                     'YOUNG AND CREATIVE',
                     style: GoogleFonts.varelaRound(
@@ -151,29 +157,29 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   ),
                   SizedBox(height: 50),
                   Text(
-                    'Consistency is all i need to Hard work\nwill do the magic and Practice',
+                    'Progresive software developer specialize in creating\nbeatiful UI and fast mobile, desktop applications',
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
                         color:
-                            (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                        fontWeight: FontWeight.w600,
+                            (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                        fontWeight: FontWeight.w800,
                         letterSpacing: 0.5,
-                        fontSize: 36,
+                        fontSize: 28,
                       ),
                     ),
                     textAlign: TextAlign.center,
                   ),
                   SizedBox(height: 20),
                   Text(
-                    'Consistency is all i need to succed Hard work and Practice will\ndo the magic Hard work and Practice ',
+                    'with progressing skills, i design and build awesome user friendly applications\nthat run with speed  as well as PWS web applications',
                     textAlign: TextAlign.center,
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
                         color:
-                            (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
-                        fontWeight: FontWeight.w400,
+                            (isColored ? Color(0xFF535353) : Color(0xFFf6f6f6)),
+                        fontWeight: FontWeight.w300,
                         letterSpacing: 0.3,
-                        fontSize: 12,
+                        fontSize: 14,
                       ),
                     ),
                   ),

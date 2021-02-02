@@ -54,6 +54,50 @@ class _DesktopState extends State<Desktop> {
   }
 }
 
+class TabData extends StatelessWidget {
+  final Data love;
+  final String title;
+
+  const TabData({
+    Key key,
+    @required this.love,
+    @required this.title,
+  }) : super(key: key);
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      child: Center(
+        child: GestureDetector(
+          onTap: () {
+            Data instance = love;
+            Navigator.pushNamed(context, '/mobileInfo', arguments: {
+              'title': instance.title,
+              'subtitle': instance.subtitle,
+              'info': instance.info,
+              'imageurl': instance.imageurl,
+              'whiteImage': instance.whiteImage,
+              'tool': instance.tool,
+              'year': instance.year,
+              'github': instance.github,
+            });
+          },
+          child: Text(
+            title,
+            style: GoogleFonts.varelaRound(
+              textStyle: TextStyle(
+                color: (isColored ? Color(0xFF3D3D3D) : Color(0xFFf6f6f6)),
+                fontSize: 46,
+                fontWeight: FontWeight.w600,
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class MobileData extends StatelessWidget {
   final Data love;
   final String title;
@@ -79,6 +123,7 @@ class MobileData extends StatelessWidget {
               'whiteImage': instance.whiteImage,
               'tool': instance.tool,
               'year': instance.year,
+              'github': instance.github,
             });
           },
           child: Text(
@@ -86,7 +131,7 @@ class MobileData extends StatelessWidget {
             style: GoogleFonts.varelaRound(
               textStyle: TextStyle(
                 color: (isColored ? Color(0xFF3D3D3D) : Color(0xFFf6f6f6)),
-                fontSize: 38,
+                fontSize: 40,
                 fontWeight: FontWeight.w600,
               ),
             ),

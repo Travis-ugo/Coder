@@ -40,7 +40,7 @@ class _ProjectRiriState extends State<Project> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 100, bottom: 10),
+                  padding: const EdgeInsets.only(top: 60, bottom: 10),
                   child: Text(
                     'WORK.',
                     style: GoogleFonts.varelaRound(
@@ -58,9 +58,7 @@ class _ProjectRiriState extends State<Project> {
                   size: 65,
                   color: (isColored ? Color(0xFF3D3D3D) : Color(0xFFf6f6f6)),
                 ),
-
                 SizedBox(height: MediaQuery.of(context).size.height / 2),
-
                 Column(
                   children: [
                     SizedBox(height: 26),

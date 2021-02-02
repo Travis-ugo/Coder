@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travis/utils/recent.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectDisplay extends StatelessWidget {
   @override
@@ -24,6 +26,59 @@ class ProjectDisplay extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
+                      Row(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          Column(
+                            children: [
+                              Text(
+                                'Year',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                    fontWeight: FontWeight.w400, fontSize: 10),
+                              ),
+                              Text(
+                                data['year'],
+                                style: GoogleFonts.varelaRound(
+                                  textStyle: TextStyle(
+                                    fontSize: 14,
+                                    fontWeight: FontWeight.w100,
+                                    color: Colors.black,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                          SizedBox(width: 50),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Tools',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 10,
+                                ),
+                              ),
+                              Text(
+                                data['tool'],
+                                style: GoogleFonts.varelaRound(
+                                  textStyle: TextStyle(
+                                    fontSize: 12,
+                                    fontWeight: FontWeight.w100,
+                                    //color: Colors.black,
+                                    letterSpacing: 0.5,
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ],
+                      ),
+                      Row(),
                       Text(
                         data['title'],
                         style: GoogleFonts.varelaRound(
@@ -43,7 +98,8 @@ class ProjectDisplay extends StatelessWidget {
                           textStyle: TextStyle(
                             fontSize: 20,
                             letterSpacing: 0.5,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w400,
+                            color: Color(0xFF4B4B4B),
                           ),
                         ),
                         textAlign: TextAlign.start,
@@ -54,8 +110,8 @@ class ProjectDisplay extends StatelessWidget {
                         style: GoogleFonts.varelaRound(
                           textStyle: TextStyle(
                             fontSize: 14,
-                            fontWeight: FontWeight.w500,
-                            color: Colors.black,
+                            fontWeight: FontWeight.w100,
+                            color: Color(0xFF414141),
                             letterSpacing: 0.5,
                           ),
                         ),
@@ -86,7 +142,15 @@ class ProjectDisplay extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Icon(Icons.email),
+                IconButton(
+                  icon: Icon(
+                    FeatherIcons.github,
+                    size: 20,
+                  ),
+                  onPressed: () async {
+                    await launch(Uri.parse(data['github']).toString());
+                  },
+                ),
                 GestureDetector(
                   onTap: () => Navigator.pop(context),
                   child: Text(
@@ -95,7 +159,7 @@ class ProjectDisplay extends StatelessWidget {
                       textStyle: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Colors.black,
+                        color: Color(0xFF303030),
                         letterSpacing: 0.5,
                       ),
                     ),

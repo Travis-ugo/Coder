@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:travis/utils/pallets.dart';
 import 'package:travis/utils/recent.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class Menu extends StatefulWidget {
   @override
@@ -105,6 +106,27 @@ class _MenuRespState extends State<Menu> {
                         ),
                       ),
                     ),
+                    SizedBox(width: MediaQuery.of(context).size.height / 20),
+                    InkWell(
+                      onTap: () async {
+                        await launch(Uri.parse(
+                                'https://docs.google.com/document/d/1nKMbH01EI-gC5ubz_brdXwkJOOK2nMLLmQCe8rGzDf8/edit?usp=sharing')
+                            .toString());
+                      },
+                      child: Text(
+                        'RESUME',
+                        style: GoogleFonts.varelaRound(
+                          textStyle: TextStyle(
+                            fontSize: 10,
+                            fontWeight: FontWeight.w500,
+                            letterSpacing: 1,
+                            color: (isColored
+                                ? Color(0xFF303030)
+                                : Color(0xFFf6f6f6)),
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
                 Spacer(),
@@ -114,8 +136,8 @@ class _MenuRespState extends State<Menu> {
                     'CONTACT',
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
-                        fontSize: 14,
-                        fontWeight: FontWeight.w600,
+                        fontSize: 10,
+                        fontWeight: FontWeight.w800,
                         letterSpacing: 0.5,
                         color:
                             (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
@@ -148,8 +170,8 @@ class _MenuRespState extends State<Menu> {
                             mouseCursor: SystemMouseCursors.click,
                             icon: Icon(
                               CupertinoIcons.xmark,
-                              size: 45,
-                              color: Colors.black,
+                              size: 25,
+                              color: Color(0xFF424244),
                             ),
                             onPressed: () {
                               open();
@@ -158,37 +180,41 @@ class _MenuRespState extends State<Menu> {
                         ],
                       ),
                       SizedBox(height: MediaQuery.of(context).size.height / 50),
-                      GestureDetector(
-                        onTap: () {},
-                        child: Text(
-                          'Resume',
-                          style: TextStyle(
-                            fontSize: 14,
-                            color: Colors.black,
+                      Text(
+                        'Contact Me',
+                        style: GoogleFonts.varelaRound(
+                          textStyle: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.w400,
+                            color: (isColored
+                                ? Color(0xFF333333)
+                                : Color(0xFFf6f6f6)),
                           ),
                         ),
                       ),
-                      Text(
-                        'Contact Me',
-                        style: TextStyle(
-                          color: Colors.black,
-                        ),
-                      ),
                       Center(
-                        child: Text(
-                          'Thrinitee@gmail.com',
-                          style: GoogleFonts.varelaRound(
-                            textStyle: TextStyle(
-                              fontSize: MediaQuery.of(context).size.width / 14,
-                              fontWeight: FontWeight.w700,
-                              color: (isColored
-                                  ? Color(0xFF3F3F3F)
-                                  : Color(0xFFf6f6f6)),
+                        child: InkWell(
+                          onTap: () async {
+                            await launch(
+                                Uri.parse('https://thrinitee@gmail.com')
+                                    .toString());
+                          },
+                          child: Text(
+                            'Thrinitee@gmail.com',
+                            style: GoogleFonts.varelaRound(
+                              textStyle: TextStyle(
+                                fontSize:
+                                    MediaQuery.of(context).size.width / 14,
+                                fontWeight: FontWeight.w700,
+                                color: (isColored
+                                    ? Color(0xFF3F3F3F)
+                                    : Color(0xFFf6f6f6)),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      SizedBox(height: 7),
+                      //SizedBox(height: 7),
                       MyIcon()
                     ],
                   ),

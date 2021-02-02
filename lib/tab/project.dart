@@ -64,27 +64,27 @@ class _ProjectsMobileDesignState extends State<TabProject> {
                       SizedBox(
                         height: MediaQuery.of(context).size.height / 8,
                       ),
-                      MobileData(
+                      TabData(
                         love: travis,
                         title: travis.title,
                       ),
-                      MobileData(
+                      TabData(
                         love: world,
                         title: world.title,
                       ),
-                      MobileData(
+                      TabData(
                         love: soccer,
                         title: soccer.title,
                       ),
-                      MobileData(
+                      TabData(
                         love: telegram,
                         title: telegram.title,
                       ),
-                      MobileData(
+                      TabData(
                         love: telegram,
                         title: telegram.title,
                       ),
-                      MobileData(
+                      TabData(
                         love: telegram,
                         title: telegram.title,
                       ),
