@@ -146,7 +146,7 @@ class _HomeTabletState extends State<HomeTablet> {
             ),
             SizedBox(height: 20),
             Text(
-              'with progressing skills, i design and build awesome user friendly applications\nthat run with speed  as well as PWS web applications',
+              'with progressing skills, i design and build awesome user friendly applications\nthat run with speed  as well as PWA web applications',
               textAlign: TextAlign.center,
               style: GoogleFonts.varelaRound(
                 textStyle: TextStyle(

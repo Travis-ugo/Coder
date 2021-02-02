@@ -198,7 +198,16 @@ class MobilePin extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Travis Okonicha ugochukwu'),
+          Text(
+            'Travis Okonicha ugochukwu',
+            style: GoogleFonts.varelaRound(
+              textStyle: TextStyle(
+                fontWeight: FontWeight.w100,
+                fontSize: 14,
+                letterSpacing: 0.9,
+              ),
+            ),
+          ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -254,8 +263,28 @@ class MobilePin extends StatelessWidget {
               ),
             ],
           ),
-          Text('version 2.1'),
-          Text('. . .'),
+          Text(
+            'version 2.1',
+            style: GoogleFonts.varelaRound(
+              textStyle: TextStyle(
+                fontWeight: FontWeight.w100,
+                fontSize: 12,
+                letterSpacing: 0.9,
+                color: Color(0xFF3F3F3F),
+              ),
+            ),
+          ),
+          Text(
+            '. . .',
+            style: GoogleFonts.varelaRound(
+              textStyle: TextStyle(
+                fontWeight: FontWeight.w100,
+                fontSize: 12,
+                letterSpacing: 0.9,
+                color: Color(0xFF3F3F3F),
+              ),
+            ),
+          ),
         ],
       ),
     );

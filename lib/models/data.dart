@@ -32,7 +32,7 @@ this web appliction diplays skills and projects of 'Travis Okonicha Ugochukwu'.
 this web application is written in dart lang with googles flutter framework,
 and hosted online with googles firebase system.
   ''',
-  imageurl: 'assets/black..jpg',
+  imageurl: 'portfolio.png',
   whiteImage: 'black..jpg',
   tool: 'Dart lang\nFlutter\nfirebase\nVs Code\nAdobe Xd',
   year: '2020',
@@ -48,7 +48,7 @@ this fast and effecient telegram bot is hosted on heroku and keeps
 running for a long period of time without check, however requires
 regular check fro maintenace.
 ''',
-  imageurl: 'robonic.jpg',
+  imageurl: 'telegram.png',
   whiteImage: 'robinic.jpg',
   tool: 'Python\nVs Code',
   year: '2020',

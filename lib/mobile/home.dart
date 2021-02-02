@@ -139,7 +139,7 @@ class _MobileState extends State<Mobile> {
                       Padding(
                         padding: const EdgeInsets.symmetric(horizontal: 50),
                         child: Text(
-                          'with progressing skills, i design and build awesome user friendly applications that run with speed  as well as PWS web applications',
+                          'with progressing skills, i design and build awesome user friendly applications that run with speed  as well as PWA web applications',
                           textAlign: TextAlign.center,
                           style: GoogleFonts.varelaRound(
                             textStyle: TextStyle(

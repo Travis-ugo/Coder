@@ -18,6 +18,8 @@ class _MenuRespState extends State<Menu> {
     });
   }
 
+  bool _hover = true;
+
   double height = 0;
   PageController pageController = PageController();
   @override
@@ -214,7 +216,6 @@ class _MenuRespState extends State<Menu> {
                           ),
                         ),
                       ),
-                      //SizedBox(height: 7),
                       MyIcon()
                     ],
                   ),
