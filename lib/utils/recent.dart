@@ -19,7 +19,7 @@ class Recent extends StatelessWidget {
             textAlign: TextAlign.center,
             style: GoogleFonts.varelaRound(
               textStyle: TextStyle(
-                fontSize: 75,
+                fontSize: 70,
                 fontWeight: FontWeight.w700,
                 color: (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
               ),
@@ -44,7 +44,7 @@ class Recent extends StatelessWidget {
                     style: GoogleFonts.varelaRound(
                       textStyle: TextStyle(
                         fontSize: 9,
-                        fontWeight: FontWeight.w500,
+                        fontWeight: FontWeight.w600,
                         color:
                             (isColored ? Color(0xFF303030) : Color(0xFFf6f6f6)),
                       ),

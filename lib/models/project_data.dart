@@ -36,6 +36,7 @@ class _DesktopState extends State<Desktop> {
               'whiteImage': instance.whiteImage,
               'tool': instance.tool,
               'year': instance.year,
+              'github': instance.github,
             });
           },
           child: Text(

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_feather_icons/flutter_feather_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:travis/utils/pallets.dart';
 import 'package:travis/utils/recent.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -12,7 +13,7 @@ class ProjectDisplay extends StatelessWidget {
     print(data);
 
     return Scaffold(
-      backgroundColor: Color(0xFFe7eeed),
+      backgroundColor: (isColored ? Color(0xFFe7eeed) : Color(0xFF1F1F1F)),
       body: Stack(
         children: [
           SingleChildScrollView(
@@ -36,7 +37,12 @@ class ProjectDisplay extends StatelessWidget {
                                 'Year',
                                 textAlign: TextAlign.start,
                                 style: TextStyle(
-                                    fontWeight: FontWeight.w400, fontSize: 10),
+                                  fontWeight: FontWeight.w400,
+                                  fontSize: 10,
+                                  color: (isColored
+                                      ? Color(0xFF4B4B4B)
+                                      : Color(0xFFf6f6f6)),
+                                ),
                               ),
                               Text(
                                 data['year'],
@@ -44,7 +50,9 @@ class ProjectDisplay extends StatelessWidget {
                                   textStyle: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w100,
-                                    color: Colors.black,
+                                    color: (isColored
+                                        ? Color(0xFF4B4B4B)
+                                        : Color(0xFFf6f6f6)),
                                     letterSpacing: 0.5,
                                   ),
                                 ),
@@ -61,6 +69,9 @@ class ProjectDisplay extends StatelessWidget {
                                 style: TextStyle(
                                   fontWeight: FontWeight.w400,
                                   fontSize: 10,
+                                  color: (isColored
+                                      ? Color(0xFF4B4B4B)
+                                      : Color(0xFFf6f6f6)),
                                 ),
                               ),
                               Text(
@@ -69,7 +80,9 @@ class ProjectDisplay extends StatelessWidget {
                                   textStyle: TextStyle(
                                     fontSize: 12,
                                     fontWeight: FontWeight.w100,
-                                    //color: Colors.black,
+                                    color: (isColored
+                                        ? Color(0xFF4B4B4B)
+                                        : Color(0xFFf6f6f6)),
                                     letterSpacing: 0.5,
                                   ),
                                 ),
@@ -99,7 +112,9 @@ class ProjectDisplay extends StatelessWidget {
                             fontSize: 20,
                             letterSpacing: 0.5,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xFF4B4B4B),
+                            color: (isColored
+                                ? Color(0xFF4B4B4B)
+                                : Color(0xFFf6f6f6)),
                           ),
                         ),
                         textAlign: TextAlign.start,
@@ -111,7 +126,9 @@ class ProjectDisplay extends StatelessWidget {
                           textStyle: TextStyle(
                             fontSize: 14,
                             fontWeight: FontWeight.w100,
-                            color: Color(0xFF414141),
+                            color: (isColored
+                                ? Color(0xFF4B4B4B)
+                                : Color(0xFFf6f6f6)),
                             letterSpacing: 0.5,
                           ),
                         ),
@@ -146,6 +163,7 @@ class ProjectDisplay extends StatelessWidget {
                   icon: Icon(
                     FeatherIcons.github,
                     size: 20,
+                    color: (isColored ? Color(0xFF4B4B4B) : Color(0xFFf6f6f6)),
                   ),
                   onPressed: () async {
                     await launch(Uri.parse(data['github']).toString());
@@ -159,7 +177,8 @@ class ProjectDisplay extends StatelessWidget {
                       textStyle: TextStyle(
                         fontSize: 14,
                         fontWeight: FontWeight.w500,
-                        color: Color(0xFF303030),
+                        color:
+                            (isColored ? Color(0xFF4B4B4B) : Color(0xFFf6f6f6)),
                         letterSpacing: 0.5,
                       ),
                     ),

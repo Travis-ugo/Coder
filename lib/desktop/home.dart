@@ -88,7 +88,7 @@ class _HomeDesktopState extends State<HomeDesktop> {
                                     ),
                                   ),
                                   Text(
-                                    '''\ni design and build beautiful mobile and desktop user friendly aplications\nwith perfection''',
+                                    '''\ni design and build beautiful mobile and desktop user friendly applications\nwith love''',
                                     textAlign: TextAlign.left,
                                     style: GoogleFonts.varelaRound(
                                       textStyle: TextStyle(

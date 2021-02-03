@@ -155,7 +155,7 @@ class _MobileState extends State<Mobile> {
                       ),
                       SizedBox(height: 150),
                       RecentWork(),
-                      SizedBox(height: 50),
+                      SizedBox(height: 35),
                       MobilePin(),
                     ],
                   ),

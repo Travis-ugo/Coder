@@ -42,13 +42,12 @@ final Data telegram = Data(
   title: 'User Bot',
   subtitle: 'Telegram Bot',
   info: '''
-An automated telegram bot helps telegram users recieve
-forex signals from one group chat to another chat room automaticlly.
-this fast and effecient telegram bot is hosted on heroku and keeps
-running for a long period of time without check, however requires
-regular check fro maintenace.
+An automated telegram bot helps telegram users recieve forex signals
+from one group chat to another chat room automaticlly. this fast and
+effecient telegram bot is hosted on heroku and keeps running for a long
+period of time, however requires maintenace.
 ''',
-  imageurl: 'telegram.png',
+  imageurl: 'teegram.png',
   whiteImage: 'robinic.jpg',
   tool: 'Python\nVs Code',
   year: '2020',
